@@ -5,7 +5,7 @@ import re
 import secrets
 
 # Configure app
-app = Flask("__name__")
+app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
 
 # Configure database with cs50 library
